@@ -39,7 +39,6 @@ function loadData() {
   if (!data.system.commandLogs) data.system.commandLogs = [];
   return data;
 }
-
 function isOwner(member) {
   return member.roles.cache.has("1526583380508938300");
 }
@@ -56,6 +55,7 @@ function isAllowed(member, data) {
 }
 } 
   return (data.system?.extraRoles || []).some(r => member.roles.cache.has(r));
+
 }
 
 const spamMap = new Map();
