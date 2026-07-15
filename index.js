@@ -143,7 +143,7 @@ function buildSystemDashContainer(data) {
   ));
   c.addSeparatorComponents(new SeparatorBuilder().setDivider(true));
   c.addTextDisplayComponents(new TextDisplayBuilder().setContent(
-    `مـنـور يـا لـاونـر <a:Shinystars:1487436371751731270>\n` +
+    `مـنـور يـا لـاونـر <a:Shinystars:1526583380508938300>\n` +
     `هـذا كـنـتـرول سـيـسـتـم مـثـل مـا طـلـبـت <:3_Worry:1457209171228233773>`
   ));
   c.addSeparatorComponents(new SeparatorBuilder().setDivider(true));
@@ -181,7 +181,7 @@ function buildPermissionsContainer() {
   c.addTextDisplayComponents(new TextDisplayBuilder().setContent(`# Permissions <a:cloud:1487436129778270249>`));
   c.addSeparatorComponents(new SeparatorBuilder().setDivider(true));
   c.addTextDisplayComponents(new TextDisplayBuilder().setContent(
-    `> هـذول رُتـب فـقـط الـي تـقـدر تـسـتـخـدم الأوامـر <a:Shinystars:1487436371751731270>\n` +
+    `> هـذول رُتـب فـقـط الـي تـقـدر تـسـتـخـدم الأوامـر <a:Shinystars:1526583380508938300>\n` +
     `تـبـي تـضـيـف رُتـب اكـتـب\n` +
     `\`+Dashboard\`\n` +
     `> واخـتـار **Sᴇᴛᴜᴘ Sʏsᴛᴇᴍ** واتـبـع الخـطـوات <:Wtf:1487436357549690921>`
