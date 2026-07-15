@@ -43,7 +43,11 @@ function loadData() {
 function saveData(d) { fs.writeFileSync("./data.json", JSON.stringify(d, null, 2)); }
 function isOwner(member) { return member.roles.cache.has(config.ownerRoleId); }
 function isAllowed(member, data) {
-  if (isOwner(member)) return true;
+ const OWNER_ID = "1526583380508938300";
+
+function isOwner(member) {
+  return member.id === OWNER_ID;
+} 
   return (data.system?.extraRoles || []).some(r => member.roles.cache.has(r));
 }
 
