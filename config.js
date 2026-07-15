@@ -1,6 +1,6 @@
 module.exports = {
   prefix: "+",
-  ownerRoleId: "1487822607884488837",
+  ownerRoleId: "1526583380508938300",
   token: "YOUR_BOT_TOKEN_HERE", // ضع توكن البوت هنا
 
   colors: {
