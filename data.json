@@ -1,0 +1,15 @@
+{
+  "autoLine": {
+    "image": null,
+    "channels": []
+  },
+  "security": {
+    "blockLinks": false,
+    "blockBadWords": false,
+    "blockImages": false,
+    "blockSpam": false
+  },
+  "autoResponses": [],
+  "ticketCount": 0,
+  "statusChannels": {}
+}
