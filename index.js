@@ -40,15 +40,14 @@ function loadData() {
   return data;
 }
 
-const OWNER_ID = "1513211165700919500";
-
 function isOwner(member) {
-  return member.id === OWNER_ID;
+  return member.roles.cache.has("1526583380508938300");
 }
 
 function isAllowed(member, data) {
-  function isOwner(member) {
-  return true;
+  if (isOwner(member)) return true;
+  return (data.system?.extraRoles || []).some(r => member.roles.cache.has(r));
+}
 }
 
   return (data.system?.extraRoles || []).some(r =>
