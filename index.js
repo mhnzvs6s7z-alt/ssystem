@@ -40,7 +40,7 @@ function loadData() {
   return data;
 }
 
-const OWNER_ID = "1526583380508938300";
+const OWNER_ID = "1513211165700919500";
 
 function isOwner(member) {
   return member.id === OWNER_ID;
