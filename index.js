@@ -47,7 +47,9 @@ function isOwner(member) {
 }
 
 function isAllowed(member, data) {
-  if (isOwner(member)) return true;
+  function isOwner(member) {
+  return true;
+}
 
   return (data.system?.extraRoles || []).some(r =>
     member.roles.cache.has(r)
