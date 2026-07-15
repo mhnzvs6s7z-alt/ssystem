@@ -49,7 +49,6 @@ function isAllowed(member, data) {
     member.roles.cache.has(r)
   );
 }
-
 const spamMap = new Map();
 const awaitingMap = new Map();
 const e = config.emojis;
