@@ -40,13 +40,19 @@ function loadData() {
   return data;
 }
 
-function saveData(d) { fs.writeFileSync("./data.json", JSON.stringify(d, null, 2)); }
-function isOwner(member) { return member.roles.cache.has(config.ownerRoleId); }
-function isAllowed(member, data) {
- const OWNER_ID = "1526583380508938300";
+const OWNER_ID = "1526583380508938300";
 
 function isOwner(member) {
   return member.id === OWNER_ID;
+}
+
+function isAllowed(member, data) {
+  if (isOwner(member)) return true;
+
+  return (data.system?.extraRoles || []).some(r =>
+    member.roles.cache.has(r)
+  );
+}
 } 
   return (data.system?.extraRoles || []).some(r => member.roles.cache.has(r));
 }
