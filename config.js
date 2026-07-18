@@ -1,5 +1,5 @@
 module.exports = {
-  prefix: "+",
+  prefix: "$",
   ownerRoleId: "1526583380508938300",
   token: "YOUR_BOT_TOKEN_HERE", // ضع توكن البوت هنا
 
