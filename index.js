@@ -610,7 +610,7 @@ client.on("messageCreate", async (message) => {
     const d2 = loadData(); d2.statusChannels[message.guild.id] = { channelId: vcId }; saveData(d2);
     return message.reply(`تم تفعيل ستاتس الأعضاء على **${vc.name}** | العدد الحالي: **${count}**`);
   }
-
+console.log("الأمر:", command);
 if (command === "dashboard") {
   if (!isOwner(message.member)) return message.reply("ما عندك صلاحية لهذا الأمر.");
 
