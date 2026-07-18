@@ -792,4 +792,7 @@ client.on("interactionCreate", async (interaction) => {
   }
 });
 
-client.login(process.env.TOKEN);
+process.on("unhandledRejection", console.error);
+process.on("uncaughtException", console.error);
+
+client.login(config.token).catch(console.error);
