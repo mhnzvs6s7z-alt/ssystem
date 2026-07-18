@@ -608,10 +608,21 @@ client.on("messageCreate", async (message) => {
     return message.reply(`تم تفعيل ستاتس الأعضاء على **${vc.name}** | العدد الحالي: **${count}**`);
   }
 
-  if (command === "dashboard") {
-    if (!isOwner(message.member)) return message.reply("ما عندك صلاحية لهذا الأمر.");
-    await message.channel.send({ components: [buildDashboardContainer()], flags: [MessageFlags.IsComponentsV2] });
+if (command === "dashboard") {
+  if (!isOwner(message.member)) return message.reply("ما عندك صلاحية لهذا الأمر.");
+
+  try {
+    await message.channel.send({
+      components: [buildDashboardContainer()],
+      flags: [MessageFlags.IsComponentsV2]
+    });
+  } catch (err) {
+    console.error(err);
+    return message.reply("صار خطأ، شوف الكونسول.");
   }
+}
+
+
 });
 
 client.on("interactionCreate", async (interaction) => {
